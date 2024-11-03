@@ -8,7 +8,7 @@ if link != "":
     yt = YouTube(link)
 
     while decision == "":
-        print("1 - Get highest quality\n2 - Download audio")
+        print("1 - Get highest quality\n2 - Download audio\n0 - Exit")
         decision = str(input())
         match decision:
             case "1":
@@ -20,6 +20,9 @@ if link != "":
                     output_path="./DownloadedMedia",
                     mp3=True
                     )
+            case "0":
+                print("Exiting")
+                break
             case _:
                 print("Invalid option")    
                 break 
