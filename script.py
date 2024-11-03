@@ -3,6 +3,7 @@ from pytubefix import YouTube
 link = str(input("Video URL > "))
 decision = ""
 
+# 
 if link != "":
     yt = YouTube(link)
 
@@ -12,10 +13,13 @@ if link != "":
         match decision:
             case "1":
                 print("Downloading video in highest quality.")
-                streams = yt.streams.get_highest_resolution().download()
+                streams = yt.streams.get_highest_resolution().download(output_path="./DownloadedMedia")
             case "2":
                 print("Downloading the audio from the video.")
-                streams = yt.streams.get_audio_only().download(mp3=True)
+                streams = yt.streams.get_audio_only().download(
+                    output_path="./DownloadedMedia",
+                    mp3=True
+                    )
             case _:
                 print("Invalid option")    
                 break 
