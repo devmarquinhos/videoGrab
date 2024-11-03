@@ -3,7 +3,7 @@
 This script was developed using ```pytubefix```. A brand new library focused in get YouTube metadata of a video or playlist.
 
 
-# Installation guide
+# :wrench: Installation guide
 
 Before installing the dependecies, make sure you're on a virtual environment.
 
@@ -19,7 +19,7 @@ After installing the dependencies, just run the code snippet below.
     python script.py
 ```
 
-# License
+# :memo: License
 
 Copyright © 2024 Marcos Emanuel
 
